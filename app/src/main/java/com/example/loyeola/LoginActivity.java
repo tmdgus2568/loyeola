@@ -69,14 +69,17 @@ public class LoginActivity extends AppCompatActivity {
                     sessionCallback.requestMe();
                     System.out.println("user_id !!! "+Character.getUser_id());
                     selectCharactersTask();
-                    if(characters != null){
-                        intent = new Intent(getApplicationContext(), SelectRaidActivity.class);
-                        startActivity(intent);
-                    }
-                    else{
-                        intent = new Intent(getApplicationContext(), SearchCharacterActivity.class);
-                        startActivity(intent);
-                    }
+
+                    intent = new Intent(getApplicationContext(), SearchCharacterActivity.class);
+                    startActivity(intent);
+//                    if(characters != null){
+//                        intent = new Intent(getApplicationContext(), SelectRaidActivity.class);
+//                        startActivity(intent);
+//                    }
+//                    else{
+//                        intent = new Intent(getApplicationContext(), SearchCharacterActivity.class);
+//                        startActivity(intent);
+//                    }
 
                 } else {
                     Log.d(TAG, "onClick: 로그인 세션끝남");

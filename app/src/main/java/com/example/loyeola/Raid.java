@@ -11,6 +11,7 @@ public class Raid {
         this.capacity = capacity;
     }
 
+
     public String getCategory_main() {
         return category_main;
     }

@@ -44,6 +44,7 @@ public class SelectRaidActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 intent = new Intent(getApplicationContext(), SearchPartyActivity.class);
                 intent.putExtra("title",raids.get(position).getCategory_sub());
+                intent.putExtra("raid_id",position+1+"");
                 startActivity(intent);
             }
         });

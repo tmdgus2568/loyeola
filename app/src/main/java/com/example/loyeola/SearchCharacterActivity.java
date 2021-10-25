@@ -56,6 +56,8 @@ public class SearchCharacterActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        System.out.println("hererererere");
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_search_character);
         binding.setActivity(this);
